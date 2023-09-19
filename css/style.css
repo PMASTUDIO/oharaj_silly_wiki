@@ -1,7 +1,8 @@
 body {
-    background-image: url('https://img.freepik.com/premium-photo/grunge-old-vintage-retro-paper-texture-background_47840-948.jpg');
+    background-image: url('https://img.freepik.com/premium-photo/close-up-background-texture-ancient-egyptian-papyrus-byblos-paper-reed-document_273651-1190.jpg?w=2000');
     /* Replace with your background image */
-    background-size: cover;
+    background-size: contain;
+    background-repeat: auto;
     font-family: 'Times New Roman', serif;
 }
 
@@ -10,17 +11,94 @@ header {
     padding: 20px;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.7);
+    margin: 20px;
 }
 
 nav {
-    /* Your navigation styles can go here */
+    display: block;
+    margin: 20px;
+    min-height: 45px;
 }
 
-#about {
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+nav .active {
+    background-color: #e2b900;
+}
+
+.about {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     margin: 20px;
+}
+
+.about img {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.by_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.by_container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+section {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans Egyptian Hieroglyphs', sans-serif;
+}
+
+section h3 {
+    font-size: 1.5em;
+    color: #a98a00;
+
+}
+
+section hr {
+    /* width: 45px; */
+    padding-top: 8px;
+    border: none;
+    border-bottom: 2px solid #a98a00;
+    opacity: 0.6;
+}
+
+section p {
+    line-height: 1.5;
+    text-align: justify;
+    font-family: 'Lato', sans-serif;
+}
+
+section img {
+    margin: 10px;
 }
 
 footer {
